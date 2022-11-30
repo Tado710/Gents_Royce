@@ -485,10 +485,10 @@ body._lock {
   color: #f3f2f2;
 }
 
-._no-webp .banner{
-  background: url("../img/banner/bg.jpg") center/cover no-repeat; }
+._no-webp .home{
+  background: url("../img/home/bg.jpg") center/cover no-repeat; }
 
-.banner {
+.home {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -500,11 +500,11 @@ body._lock {
   min-height: 650px;
 }
 
-.banner__image-ibg {
+.home__image-ibg {
   padding: 0px 0px 40% 0px;
 }
 
-.banner__body {
+.home__body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -521,7 +521,7 @@ body._lock {
   text-align: center;
 }
 
-.banner__title {
+.home__title {
   font-weight: 900;
   line-height: 1;
   text-transform: uppercase;
@@ -529,13 +529,13 @@ body._lock {
 }
 
 @supports (font-size: clamp( 2.1875rem , 1.8465909091rem  +  1.7045454545vw , 3.125rem )) {
-  .banner__title {
+  .home__title {
     font-size: clamp( 2.1875rem , 1.8465909091rem  +  1.7045454545vw , 3.125rem );
   }
 }
 
 @supports not (font-size: clamp( 2.1875rem , 1.8465909091rem  +  1.7045454545vw , 3.125rem )) {
-  .banner__title {
+  .home__title {
     font-size: calc(2.1875rem + 0.9375 * (100vw - 20rem) / 55);
   }
 }
@@ -624,9 +624,11 @@ body._lock {
   gap: 30px;
 }
 
+.blog__item {
+  height: 100%;
+}
+
 .item-blog {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
   position: relative;
   background-color: #ffffff;
 }
@@ -647,6 +649,16 @@ body._lock {
 .item-blog__body {
   padding: 15px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
 }
 
 .item-blog__title {
@@ -904,4 +916,4 @@ body._lock {
   }
 }
 
-._webp .banner{ background: url(../img/banner/bg.webp) center/cover no-repeat; }
+._webp .home{ background: url(../img/home/bg.webp) center/cover no-repeat; }
