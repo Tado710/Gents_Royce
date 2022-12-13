@@ -1087,9 +1087,9 @@ body._lock {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-transform: translate(-8%, -18%);
-      -ms-transform: translate(-8%, -18%);
-          transform: translate(-8%, -18%);
+  -webkit-transform: translate(0%, -18%);
+      -ms-transform: translate(0%, -18%);
+          transform: translate(0%, -18%);
 }
 
 @supports (max-width: clamp( 15.625rem , 12.8977272727rem  +  13.6363636364vw , 23.125rem )) {
@@ -1126,23 +1126,23 @@ body._lock {
 }
 
 .home__title span {
-  font-weight: 600;
+  font-weight: 700;
 }
 
-@supports (font-size: clamp( 1.875rem , 1.4204545455rem  +  2.2727272727vw , 3.125rem )) {
+@supports (font-size: clamp( 2.1875rem , 1.8465909091rem  +  1.7045454545vw , 3.125rem )) {
   .home__title span {
-    font-size: clamp( 1.875rem , 1.4204545455rem  +  2.2727272727vw , 3.125rem );
+    font-size: clamp( 2.1875rem , 1.8465909091rem  +  1.7045454545vw , 3.125rem );
   }
 }
 
-@supports not (font-size: clamp( 1.875rem , 1.4204545455rem  +  2.2727272727vw , 3.125rem )) {
+@supports not (font-size: clamp( 2.1875rem , 1.8465909091rem  +  1.7045454545vw , 3.125rem )) {
   .home__title span {
-    font-size: calc(1.875rem + 1.25 * (100vw - 20rem) / 55);
+    font-size: calc(2.1875rem + 0.9375 * (100vw - 20rem) / 55);
   }
 }
 
 .home__cite {
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1.2;
   text-transform: uppercase;
   color: #ffffff;
@@ -1150,15 +1150,15 @@ body._lock {
       align-self: flex-end;
 }
 
-@supports (font-size: clamp( 1.125rem , 1.0795454545rem  +  0.2272727273vw , 1.25rem )) {
+@supports (font-size: clamp( 0.8125rem , 0.7443181818rem  +  0.3409090909vw , 1rem )) {
   .home__cite {
-    font-size: clamp( 1.125rem , 1.0795454545rem  +  0.2272727273vw , 1.25rem );
+    font-size: clamp( 0.8125rem , 0.7443181818rem  +  0.3409090909vw , 1rem );
   }
 }
 
-@supports not (font-size: clamp( 1.125rem , 1.0795454545rem  +  0.2272727273vw , 1.25rem )) {
+@supports not (font-size: clamp( 0.8125rem , 0.7443181818rem  +  0.3409090909vw , 1rem )) {
   .home__cite {
-    font-size: calc(1.125rem + 0.125 * (100vw - 20rem) / 55);
+    font-size: calc(0.8125rem + 0.1875 * (100vw - 20rem) / 55);
   }
 }
 
@@ -1475,6 +1475,12 @@ body._lock {
 
   .social {
     padding: 0px 45px 0px 0px;
+  }
+
+  .home__body {
+    -webkit-transform: translate(7%, -18%);
+        -ms-transform: translate(7%, -18%);
+            transform: translate(7%, -18%);
   }
 }
 
