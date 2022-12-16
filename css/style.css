@@ -935,6 +935,7 @@ body._lock {
   top: 102%;
   left: 0;
   font-size: 1rem;
+  font-style: italic;
   line-height: 1;
   font-weight: 400;
   color: #bb9c66;
