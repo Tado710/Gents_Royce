@@ -770,7 +770,7 @@ body._lock {
 }
 
 .footer__container {
-  margin-bottom: 1.875rem;
+  margin-bottom: 2.1875rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -793,7 +793,6 @@ body._lock {
 }
 
 .footer__logo {
-  margin-bottom: 1.25rem;
   display: inline-block;
   font-weight: 800;
   line-height: 1;
@@ -935,10 +934,9 @@ body._lock {
   top: 102%;
   left: 0;
   font-size: 1rem;
-  font-style: italic;
   line-height: 1;
   font-weight: 400;
-  color: #bb9c66;
+  color: #ff6600;
 }
 
 .form__button {
@@ -950,7 +948,6 @@ body._lock {
 }
 
 .social-footer {
-  margin-bottom: 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1362,6 +1359,12 @@ body._lock {
   color: #393d47;
 }
 
+@media (min-width: 29.99875em) {
+  .social-footer {
+    margin-bottom: 1.25rem;
+  }
+}
+
 @media (min-width: 61.99875em) {
   .menu__link:hover::after {
     width: 100%;
@@ -1518,6 +1521,10 @@ body._lock {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+
+  .footer__logo {
+    margin-bottom: 1.25rem;
   }
 
   .footer__email {
